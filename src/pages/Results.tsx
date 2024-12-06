@@ -45,7 +45,7 @@ const ResultsPage = () => {
 			}}>
 			<Statistics score={score} questions={questions} responses={responses} />
 
-			<Grid container direction="column" alignItems="center" style={{ width: "fit-content", gap: 2 }}>
+			<Grid container direction="column" alignItems="center" style={{ width: "80%", maxWidth: 700, gap: 8 }}>
 				{questions.map((question, index) => {
 					const userResponse = responses.find((response) => response.questionIndex === index)
 

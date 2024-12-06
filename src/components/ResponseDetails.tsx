@@ -15,12 +15,30 @@ interface ResponseDetailsProps {
 
 const ResponseDetails: FC<ResponseDetailsProps> = ({ answer, question, label }) => {
 	const isCorrect = answer?.answer === question.answer
+
+	const colorDictionnary = {
+		easy: "#4ae96445",
+		medium: "#e6e9587e",
+		hard: "#f552527d",
+	}
+
 	return (
-		<Accordion sx={{ maxWidth: 700, width: "80%", borderRadius: 2, "&::before": { position: "unset" } }}>
+		<Accordion sx={{ width: "100%", borderRadius: 2, "&::before": { position: "unset" } }}>
 			<AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1-content" id="panel1-header">
 				<Grid container alignItems="center" style={{ gap: 16 }}>
 					{isCorrect ? <CheckCircleOutlineOutlinedIcon color="success" /> : <CancelOutlinedIcon color="error" />}
 					<Typography variant="body2">{label}</Typography>
+					<Typography
+						variant="caption"
+						color="black"
+						style={{
+							borderRadius: 99,
+							padding: "2px 10px",
+							background: colorDictionnary[question.difficulty],
+							marginLeft: 16,
+						}}>
+						{question.difficulty === "easy" ? "Facile" : question.difficulty === "medium" ? "Moyen" : "Difficile"}
+					</Typography>
 				</Grid>
 			</AccordionSummary>
 			<AccordionDetails>

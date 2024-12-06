@@ -17,15 +17,15 @@ const Instructions = () => {
 					</li>
 					<li>
 						<strong>Questions et réponses :</strong> Vous aurez une série de questions à choix multiple. Chaque question
-						vous donne deux options parmi lesquelles choisir.
+						vous donne quatre options parmi lesquelles choisir.
 					</li>
 					<li>
 						<strong>Temps limité :</strong> Vous disposez de 30 secondes pour répondre à chaque question. Une barre de
 						progression vous indique le temps restant.
 					</li>
 					<li>
-						<strong>Continuez :</strong> Cliquez sur "Continuer" après chaque question pour passer à la suivante. Si le
-						temps expire, vous passerez automatiquement à la question suivante.
+						<strong>Continuez :</strong> Cliquez sur "Question Suivante" après chaque question pour passer à la
+						suivante. Si le temps expire, vous passerez automatiquement à la question suivante.
 					</li>
 					<li>
 						<strong>Résultats :</strong> À la fin du quiz, vous recevrez vos résultats pour évaluer vos connaissances.
