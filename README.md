@@ -47,7 +47,7 @@ A responsive and interactive quiz application built using **React**, **TypeScrip
 
    ```bash
    git clone https://github.com/IslamMkr/quiz.git
-   cd quiz-app
+   cd quiz
    ```
 
 2. Install Dependencies
